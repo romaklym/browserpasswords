@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: browserpasswords
-Version: 0.0.3
+Version: 0.0.4
 Summary: Collects login information from Chrome, Mozilla & Brave
 Home-page: https://github.com/romaklym/browserpasswords
 Author: Roman Klym
@@ -8,6 +8,7 @@ Author-email: klymromanr@protonmail.com
 License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/romaklym/browserpasswords
 Platform: Windows
+Platform: MacOS
 Classifier: Programming Language :: Python :: 3.9
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: Microsoft :: Windows
