@@ -122,23 +122,24 @@ def decrypt_password(password, key):
 
 
 def get_passwords(key) -> dict:
-    """Get the user's browsers history by using sqlite3 module to connect to the dabases.
-       It returns a dictionary: its key is a name of browser in str and its value is a list of
-       tuples, each tuple contains four elements, including url, title, and visited_time. 
-       Example
-       -------
-       >>> import browserpasswords as bp
-       >>> dict_obj = bp.get_passwords()
-       >>> dict_obj.keys()
-       >>> dict_keys(['safari', 'chrome', 'firefox'])
-       >>> dict_obj['safari'][0]
-       >>> ("Origin URL: https://mail.protonmail.com/login",
+    """
+        Get user's browser login info by using sqlite3 module to connect to the dabase.
+        It returns a dictionary: its key is a name of browser in str and its value is a list of
+        tuples, each tuple contains six elements, including origin url, action url, username, password, creation date & last used date. 
+        Example
+        -------
+        >>> import browserpasswords as bp
+        >>> dict_obj = bp.get_passwords()
+        >>> dict_obj.keys()
+        >>> dict_keys(['safari', 'chrome', 'firefox'])
+        >>> dict_obj['safari'][0]
+        >>> ("Origin URL: https://mail.protonmail.com/login",
             "Action URL: https://mail.protonmail.com/",
             "Username: klymroman@protonmail.com",
             "Password: MyPassword",
             "Creation date: 2015-09-18 09:35:16.013583",
             "Last Used: 2021-06-07 12:02:40.661260",
-            "==================================================",)
+            "==================================================")
     """
 
     key = get_encryption_key()
