@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/browserpasswords/__init__.py
+src/browserpasswords/browserpasswords.py
+src/browserpasswords.egg-info/PKG-INFO
+src/browserpasswords.egg-info/SOURCES.txt
+src/browserpasswords.egg-info/dependency_links.txt
+src/browserpasswords.egg-info/requires.txt
+src/browserpasswords.egg-info/top_level.txt
