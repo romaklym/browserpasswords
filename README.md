@@ -51,14 +51,17 @@ NAME
 
 FUNCTIONS
 
-    get_browserhistory() -> dict
+    get_passwords() -> dict
         Get user's browser login info by using sqlite3 module to connect to the dabase.
-        It returns a dictionary: its key is a name of browser in str and its value is a list of
-        tuples, each tuple contains six elements, including origin url, action url, username, password, creation date & last used date. 
+        It returns a dictionary: its key is a name of browser in str and its value is a list of tuples, each tuple contains six elements, including
+        origin url, action url, username, password, creation date & last used
+        date. 
     
     get_database_paths() -> dict
         Get paths to the database of browsers and store them in a dictionary.
-        It returns two dictionaries: first & second file keys is the name of browser in str and value of the first is the path to database in str, value of the second is the name of database file.
+        It returns two dictionaries: first & second file keys is the name of
+        browser in str and value of the first is the path to database in str
+        value of the second is the name of database file.
     
     get_username() -> str
         Get username based on their local computers
