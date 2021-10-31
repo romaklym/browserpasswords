@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="browserpasswords",
-    version="0.0.2",
+    version="0.0.3",
     author="Roman Klym",
     author_email="klymromanr@protonmail.com",
     description="Collects login information from Chrome, Mozilla & Brave",
